@@ -4,9 +4,17 @@
         <servlet-name>IndexServlet</servlet-name>
         <servlet-class>Servlet.IndexServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>HumanServlet</servlet-name>
+        <servlet-class>Servlet.HumanServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>IndexServlet</servlet-name>
         <url-pattern>/Index</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HumanServlet</servlet-name>
+        <url-pattern>/HumanServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
