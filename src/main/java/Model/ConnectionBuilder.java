@@ -32,9 +32,9 @@ public class ConnectionBuilder {
             Properties prop = new Properties();
             InputStream input = classloader.getResourceAsStream("config.properties");
             prop.load(input);
-            String mysqlurl = prop.getProperty("mysqlurl");
-            String mysqluser = prop.getProperty("mysqluser");
-            String mysqlpassword = prop.getProperty("mysqlpassword");
+            String mysqlurl = prop.getProperty("dburl");
+            String mysqluser = prop.getProperty("dbuser");
+            String mysqlpassword = prop.getProperty("dbpassword");
 
             test = "url:" + mysqlurl + ", dbuser:" + mysqluser + ", dbpassword:" + mysqlpassword;
 
