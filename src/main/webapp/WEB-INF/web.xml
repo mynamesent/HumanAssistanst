@@ -4,14 +4,6 @@
         <servlet-name>HumanServlet</servlet-name>
         <servlet-class>controller.HumanServlet</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>HumanServlet</servlet-name>
-        <servlet-class>Servlet.HumanServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>HumanServlet</servlet-name>
-        <url-pattern>/HumanServlet</url-pattern>
-    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>HumanServlet</servlet-name>
         <url-pattern>/HumanServlet</url-pattern>
