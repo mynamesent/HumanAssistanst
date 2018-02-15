@@ -61,11 +61,11 @@ public class HelloClass {
         String message = null;
         try {
             con = ConnectionBuilder.getMySqlCond();
-            PreparedStatement pstm = con.prepareStatement("SELECT message FROM Human-hello WHERE id=?");
+            PreparedStatement pstm = con.prepareStatement("SELECT data FROM hellodb WHERE dataid=?");
             pstm.setInt(1, id);
             ResultSet rs = pstm.executeQuery();
             if(rs.next()){
-                message = rs.getString("message");
+                message = rs.getString("data");
             }
             rs.close();
             pstm.close();
