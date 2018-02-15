@@ -6,8 +6,9 @@
         <title>Human Assistant</title>
     </head>
     <body>
-
         <h1>Human Assistant </h1>
+        <h2><center><%=request.getAttribute("hellomessage")%></center></h2>
+
 
     </body>
 </html>
