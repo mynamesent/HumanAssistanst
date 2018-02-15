@@ -45,7 +45,23 @@ Download : https://dev.mysql.com/downloads/windows/installer/5.7.html
  ```bash
  SET PASSWORD = PASSWORD('รหัสผ่านที่ต้องการ'); 
  ```
-  )
+
+ สร้าง Database ใน MySQL
+
+ ```bash
+ CREATE TABLE IF NOT EXISTS hellodb (
+  dataid int(11) NOT NULL,
+  data varchar(20) NOT NULL
+ );
+ ```
+
+ จากนั้น Insert ข้อมูล ลงใน Database
+
+ ```bash
+ INSERT INTO hellodb (dataid, data) VALUES
+ (1, 'hello world'),
+ (2, 'Human Hello World');
+ ```
  
  # Config Properties
  สร้างไฟล์ config.properties ใน /src/main/resoures โดยใส่
@@ -54,9 +70,9 @@ Download : https://dev.mysql.com/downloads/windows/installer/5.7.html
  dburl=${databaseURL}
  dbuser=${databaseUsername}
  dbpassword= ${databasePassword}
+ ```
  
- 
- +## Members
+ ## Members
  57130500032 ธนศักดิ์ ไชยบุตร  <br>
  58130500067 วิวิศน์ ลิขิตเจริญพันธ์ <br>
  58130500068 วิศิษฐ์ หลวงสนาม <br>
